@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind Mysuru", sans-serif;
+    font-size: 62, 5%;
+    ;
+}
+
+body {
+    background-color: #040714;
+}
+
+li,
+a,
+ul {
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.backgrond-img {
+    background: url('../imgs/Background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: end;
+    padding: 20px 30px;
+}
+
+.header-button {
+    margin: none;
+    padding: 8px 20px;
+    background-color: #2B2D37;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.header-button:hover {
+    background-color: #fff;
+    color: #2B2D37;
+    border: #2B2D37 1px solid;
+    transition: 0.5s ease;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0 10rem 0;
+    gap: 1.5rem;
+}
+
+.section-container-content {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-button {
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #0063E5;
+    cursor: pointer;
+}
+
+.content-button:hover {
+    opacity: 0.9;
+}
+
+.section-text {
+    text-align: center;
+    color: #C0C0C0;
+
+}
+
+.text-img {
+    display: flex;
+    justify-content: center;
+}
+
+.section h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.section-filmes {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.section-filmes ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.0rem;
+}
+
+.section-filmes a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.section-filmes a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.5s ease;
+}
+
+.section-filmes a:hover::after {
+    width: 100%;
+}
+
+.section-filmes-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 8rem;
+}
+
+.filmes {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filmes img {
+    height: 250px;
+}
+
+.filmes img:hover {
+    scale: 0.9;
+    transition: 0.s ease;
+}
+
+.section-plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+.section-plans span{
+    margin-top: 1rem;
+    text-align: center;
+    color: #C0C0C0;
+}
+.section-plans h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section-plans p {
+    color: #C0C0C0;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.section-plans-buttons-container {
+    gap: 1rem;
+    padding: 5px;
+    align-items: center;
+    border-radius: 50px;
+    display: flex;
+    background-color: #2B2D37;
+    margin-bottom: 2.4rem;
+}
+
+.bundle {
+    padding: 8px 16px;
+    border-radius: 50px;
+    background-color: #0063E5;
+    color: #fff;
+    cursor: pointer;
+}
+.bundle:hover {
+    opacity: 0.9;
+}
+.disney {
+    color: #F9F9F9;
+    padding: 8px 16px 8px 0px;
+}
+
+
+.section-container-plans {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adicionado */
+    padding: 20px;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    min-height: 350px;
+}
+.card img {
+    margin-bottom: 1.5rem;
+}
+.card-header h2{
+    color: #fff;
+}   
+.card-header p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.card-text {
+    text-align: center;
+}
+.card i{
+    color: #fff;
+    margin-right: 0.5rem;
+}
+.card-footer {
+    margin-top: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card-footer h2 {
+    color: #fff;
+}
+.article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 80px;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}
+.article-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.article-text-container h1{
+    color: #fff;
+    font-size: 3rem;
+}
+.section-text-container p{
+    color: #C0C0C0;
+}
+.section-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-disney-bundle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+.article-disney-bundle img{
+    height: 350px;
+}
+.disney-bundle-info{
+    gap: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 30px;
+    background-color: #000f66;
+    border-radius: 0 8px 8px 0;
+}
+.disney-bundle-info p{
+    color: #fff;
+    font-size: 1.6rem;
+}
+.disney-bundle-info a{
+    color: #C0C0C0;
+}
+.section-devices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.section-devices h1{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.card-device-container{
+    display: flex;
+}
+.card-device-container h2{
+    color: #fff;
+}
+.card-device-container p{
+    color: #C0C0C0;
+}
+.faq{
+    padding: 0 80px;
+    margin-bottom: 8rem;
+}
+.faq h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.accordion {
+    background-color: #191b23;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.acordion-header {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.acordion-header span {
+    color: #fff;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.arrow{
+    color: #fff;
+}
+
+.acordion-body {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    color: #fff;
+    font-size: 14px;
+    overflow: hidden;
+    transition: opacity 0.5s ease-out;
+}
+
+.acordion-body.active {
+    max-height: 200px;
+    opacity: 1;
+    padding: 10px;
+}
+.arrow{
+    transition: transform 0.5s ease-out;
+}
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    color: #C0C0C0;
+}
+.footer-container-2{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 2rem;
+    color: #C0C0C0;
+}
+.copy{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #C0C0C0;
+}
+
+@media (max-width: 720px) {
+    .section-container-content{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .text-img img{
+        display: none;
+    }
+    .section a {
+        display: none;
+    }
+    .section-container-plans{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .article{
+        flex-direction: column;
+    }
+    .article-disney-bundle{
+        padding: 0 10px;
+    }
+    .card-device-container{
+        flex-direction: column;
+    }
+    .footer{
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+}
