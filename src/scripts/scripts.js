@@ -6,3 +6,13 @@ acordions.forEach(accordion => {
         body.classList.toggle('active');
     });
 });
+
+
+const links = document.querySelectorAll('.section-filmes a');
+const currentPath = window.location.pathname;
+
+links.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+        link.classList.add('active-hover');
+    }
+});
